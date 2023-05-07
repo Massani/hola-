@@ -1,7 +1,10 @@
-var button = document.getElementById("myButton");
+var menuToggle = document.querySelector('.menu-toggle');
+var nav = document.querySelector('nav');
 
-button.addEventListener("click", function() {
-  alert("¡Haz hecho clic en el botón!");
+menuToggle.addEventListener('click', function() {
+  if (nav.style.display === 'flex') {
+    nav.style.display = 'none';
+  } else {
+    nav.style.display = 'flex';
+  }
 });
-console.log (button)
-

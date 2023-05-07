@@ -1,33 +1,150 @@
 <!DOCTYPE html>
-<html lang="es">
-<head>
-	<meta charset="UTF-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>proyeto</title>
-</head>
-<body>
-	<h1>proyeto 1</h1>
-	<form>
-		<input type="text">
-		<button></button>
-	</form>
-	<hr>
-	<tbody>
-		<tr>
-			<td>
-				<button></button>
-				<button></button>
-				<button></button>
-			</td>
-		</tr>
-		<tr>
-			<td>
-				<button></button>
-				<button></button>
-				<button></button>
-			</td>
-		</tr>
-	</tbody>
-</body>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>HIERRO PARILLA</title>
+		<link rel="stylesheet" href="style.css">
+		<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css"/>
+		<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css"/>
+		
+	</head>
+	<body>
+		<header>
+			<div class="container">
+			  <div class="logo">
+				<a class="logo-1" href="#"><img src="https://tse1.mm.bing.net/th?id=OIP.h7h2a0uL1bGfsVMSyM0f3wHaHO&pid=Api&P=0" alt="Logo del Restaurante"></a>
+			  </div>
+			  <nav>
+				<ul>
+				  <li><a href="#">Inicio</a></li>
+				  <li><a href="#">Galería</a></li>
+				  <li><a href="#">Parrilla</a></li>
+				  <li><a href="#">Nosotros</a></li>
+				  <li><a href="#">Ubicación</a></li>
+				</ul>
+			  </nav>
+			  <div class="menu-toggle"><i class="fas fa-bars"></i></div>
+			</div>
+		  </header>
+		  
+			
+			<section class="portada">
+				<div class="texto-portada">
+					<h1>Bienvenido al Restaurante de Hierro Parrilla</h1>
+		  <p>Disfruta de nuestros deliciosos platillos y bebidas en un ambiente acogedor y familiar.</p>
+		  <button class="boton">Reserva una Mesa</button>
+		</div>
+	  </section>
+	  
+	<section id="menu">
+		<h2>Nuestro Menú</h2>
+		
+		<div class="menu-item">
+			<img src="https://tse1.mm.bing.net/th?id=OIP.xQzMEw6ODDCgHUJJPwKMZwHaE8&pid=Api&P=0" alt="Hamburguesa">
+		  <h3>Hamburguesa</h3>
+		  <p>Deliciosa hamburguesa de carne de res, lechuga, tomate y queso cheddar. Servida con papas fritas.</p>
+		  <span class="precio">$10.00</span>
+		</div>
+		
+		<div class="menu-item">
+		  <img src="https://tse4.mm.bing.net/th?id=OIP.hPHH278wtPDcjREVUOGTNgHaE7&pid=Api&P=0" alt="Costillas">
+		  <h3>Costillas de Cerdo</h3>
+		  <p>Costillas de cerdo asadas a la parrilla con salsa barbacoa. Servidas con arroz y frijoles.</p>
+		  <span class="precio">$15.00</span>
+		</div>
+		
+		<div class="menu-item">
+		  <img src="https://tse2.mm.bing.net/th?id=OIP.w3e8Jvh26CgNiJUy06yJ3QHaE8&pid=Api&P=0" alt="Ensalada">
+		  <h3>Ensalada César</h3>
+		  <p>Lechuga romana, croutones, queso parmesano y pollo a la parrilla. Servida con aderezo César.</p>
+		  <span class="precio">$8.00</span>
+		</div>
+	  </section>
+	  <section id="fotos">
+		<h2>Nuestras Fotos</h2>
+		<div class="slider">
+			<div class="slides">
+			  <div class="slide"><img src="https://tse3.mm.bing.net/th?id=OIP.jo7NLaqewEEMYeOIzdv2UAHaDz&pid=Api&P=0"><button class="btn">Ver más</button></div>
+			  <div class="slide"><img src="https://tse2.mm.bing.net/th?id=OIP.BW2PH4K2q4JAeefznb4x0gHaE6&pid=Api&P=0"><button class="btn">Ver más</button></div>
+			  <div class="slide"><img src="https://tse4.mm.bing.net/th?id=OIP.6j6qaRMMYk5CIncrja43ngHaET&pid=Api&P=0"><button class="btn">Ver más</button></div>
+			</div>
+		  </div>
+	  </section>
+	  <section id="videos">
+		<h2>Nuestros Videos</h2>
+		<div class="videos-container">
+		  <div class="video">
+			<iframe src="https://www.youtube.com/embed/dQw4w9WgXcQ" frameborder="0" allowfullscreen></iframe>
+		  </div>
+		  <div class="video">
+			<iframe src="https://www.youtube.com/embed/6Dh-RL__uN4" frameborder="0" allowfullscreen></iframe>
+		  </div>
+		  <div class="video">
+			<iframe src="https://www.youtube.com/embed/3tmd-ClpJxA" frameborder="0" allowfullscreen></iframe>
+		  </div>
+		</div>
+	  </section>
+	  <section id="reservaciones">
+		<h2>Reserva una mesa</h2>
+		<form>
+		  <label for="nombre">Nombre:</label>
+		  <input type="text" id="nombre" name="nombre" required>
+		  
+		  <label for="fecha">Fecha:</label>
+		  <input type="date" id="fecha" name="fecha" required>
+		  
+		  <label for="hora">Hora:</label>
+		  <input type="time" id="hora" name="hora" required>
+		  
+		  <label for="personas">Número de personas:</label>
+		  <input type="number" id="personas" name="personas" min="1" max="10" required>
+		  
+		  <button class="boton" type="submit">Enviar reserva</button>
+		</form>
+	</section>
+	  <footer id="footer">
+		<div class="container">
+		  <div class="row">
+			<div class="col">
+			  <h4>Nuestro Restaurante</h4>
+			  <ul>
+				<li><a href="#">Sobre Nosotros</a></li>
+				<li><a href="#">Nuestro Menú</a></li>
+				<li><a href="#">Reservaciones</a></li>
+				<li><a href="#">Galería de Fotos</a></li>
+				<li><a href="#">Videos</a></li>
+			  </ul>
+			</div>
+			<div class="col">
+			  <h4>Horario de Atención</h4>
+			  <ul>
+				<li>Lunes - Viernes: 11:00am - 10:00pm</li>
+				<li>Sábado - Domingo: 12:00pm - 11:00pm</li>
+			  </ul>
+			</div>
+			<div class="col">
+			  <h4>Contacto</h4>
+			  <ul>
+				<li>Dirección: 1234 Calle Principal, Ciudad</li>
+				<li>Teléfono: (555) 555-5555</li>
+				<li>Email: info@restaurante.com</li>
+			  </ul>
+			</div>
+		  </div>
+		  <div class="row">
+			<div class="col">
+			  <p>&copy; 2023 Restaurante. Todos los derechos reservados.</p>
+			</div>
+		  </div>
+		</div>
+	  </footer>
+	  
+	  
+	  
+	  
+	<script src="gege.js"></script>
+	<script type="text/javascript" src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+
+  </body>
 </html>
