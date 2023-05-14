@@ -51,7 +51,7 @@ nav ul li a:hover {
 .portada {
   background-image: url(http://www.terrazapozoalbero.com/wp-content/uploads/2020/08/parrilada-1.png);
   background-size: cover;
-  opacity: 80%;
+  opacity: 95%;
   background-position: center;
   height: 80vh;
   display: flex;
@@ -60,7 +60,9 @@ nav ul li a:hover {
   color: #fff;
   text-align: center;
   font-family: 'Roboto', sans-serif;
+
 }
+
 
 .texto-portada {
   max-width: 600px;
@@ -80,6 +82,8 @@ p {
   border-radius: 5px;
   box-shadow: 4px 10px 20px 0 rgb(61, 236, 8);
   transition:  0.5s ease-in-out ;
+  color: #080101;
+  font-family: 'Roboto', sans-serif;
 }
  
 
@@ -98,6 +102,18 @@ button {
   padding: 50px;
   text-align: center;
   font-family: 'Roboto', sans-serif;
+}
+.boton-mas{
+  display: flex;
+  background-color: #f70808;
+  color: #fff;
+  margin-top: 30px;
+  margin-left: 45%;
+  
+}
+.boton-mas:hover{
+  box-shadow: 4px 10px 20px 0 rgb(61, 236, 8);
+  transition:  0.5s ease-in-out ;
 }
 
 h2 {
@@ -196,6 +212,7 @@ h2 {
 
 .slider {
   position: relative;
+
   width: 100%;
   overflow: hidden;
   margin: 0 auto;
@@ -208,7 +225,7 @@ h2 {
 
 .slide {
   position: relative;
- 
+  width: 100%;
   margin-right: 30px;
 }
 
@@ -317,9 +334,11 @@ h2 {
   text-decoration: none;
 }
 
-.col ul li a:hover {
-  text-decoration: underline;
-  background-color: #eb0505;
+.col ul li a:hover { 
+  border-radius: 5px;
+  box-shadow: 4px 10px 20px 0 rgb(61, 236, 8);
+  transition:  0.5s ease-in-out ;
+  font-family: 'Roboto', sans-serif;
 }
 
 .row:last-child {
